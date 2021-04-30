@@ -27,7 +27,7 @@ class TreeAdminController extends CRUDController
             }
 
             return $this->render(
-                'RedCodeTreeBundle:CRUD:tree.html.twig',
+                '@RedCodeTree/CRUD/tree.html.twig',
                 [
                     'action' => 'list',
                     'csrf_token' => $this->getCsrfToken('sonata.batch'),
